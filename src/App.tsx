@@ -10,7 +10,7 @@ function App() {
   }
   
   const decrementCount = () => {
-    setCounter(--counter);
+    counter > 0 && setCounter(--counter);
     console.log(`counter value : ${counter}`)
   }
 
